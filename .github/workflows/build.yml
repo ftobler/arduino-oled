@@ -15,8 +15,6 @@ jobs:
 
       - name: Set up Arduino CLI
         uses: arduino/setup-arduino-cli@v2
-        with:
-          version: latest
 
       - name: Install platform
         run: |
