@@ -16,12 +16,12 @@ jobs:
       - name: Set up Arduino CLI
         uses: arduino/setup-arduino-cli@v2
 
-      - name: Install platform
+      - name: Install platform AVR
         run: |
           arduino-cli core update-index
           arduino-cli core install arduino:avr
 
-      - name: Add library(s) from Git
+      - name: Add library(s) from Arduino Library Manager
         run: |
           arduino-cli lib install "Adafruit SSD1306"
           arduino-cli lib install "Adafruit GFX Library"
