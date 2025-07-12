@@ -23,8 +23,8 @@ jobs:
 
       - name: Add library(s) from Git
         run: |
-          arduino-cli lib install Adafruit_SSD1306
-          arduino-cli lib install Adafruit-GFX-Library
+          arduino-cli lib install "Adafruit SSD1306"
+          arduino-cli lib install "Adafruit GFX Library"
 
       - name: Compile sketch Oled3D
         run: |
